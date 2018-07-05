@@ -1,15 +1,16 @@
-/* ***LAB INCOMPLETE***
- * 
- *  
+/*
+ *  ***LAB INCOMPLETE***
+ *   
  *  LAB 1 PART 1: Write a Java Console program to perform the following task:
  * 
  * Input: Your program should read two integer numbers from the user with the
- * same number of digits (example: number1= 234, number2 = 564).
+ * same number of digits (example: number1= 234, number2 = 564). [In Progress]
  * 
  * Task: Check if each corresponding place in the two numbers (ones, tens,
- * hundreds, ...) sums to the same total.
+ * hundreds, ...) sums to the same total. [Not Started]
  * 
- * Output: Your program should print out: True or False based on the result.
+ * Output: Your program should print out: True or False based on the result. 
+ * [Not Started]
  * 
  * Examples: Number1 = 153 , Number2 = 345 => 1+3 ≠ 5+4 ≠ 3+5 Program prints
  * False. Number1 = 543 , Number2 = 456 => 5+4 = 4+5 = 3+6 Program prints True.
@@ -33,11 +34,11 @@ public class DigiCheck {
 		int userNum2 = 0; // 2nd user integer input
 		boolean isInteger;
 
-		do {
-			// Output the prompt.
+		do { // FIXME redo with while instead of if (??).
+				// Output the prompt.
 			System.out.println("Enter 3 digit number between 100 and 999: [Example:'123'] ");
 			// Wait for the user to enter a line of text.
-			// If user inputs invalid integers, .hasNextInt verifies.
+			// If user inputs invalid integers, input.hasNextInt verifies.
 			if (input.hasNextInt()) { // FIXME && (userNum1 >= 100 && userNum1 < 1000)) { // <- bad code, is still
 										// allowing integers below 100.
 				userNum1 = input.nextInt();
@@ -52,7 +53,7 @@ public class DigiCheck {
 		System.out.println("Enter 3 more digits, number between 100 and 999: [Example:'789'] ");
 
 		// Wait for the user to enter the next line of text.
-		userNum2 = input.nextInt();
+		userNum2 = input.nextInt(); // FIXME needs own verification or integrated with loop verification used above.
 
 		// Tell them what they entered.
 		System.out.println("You've entered: " + userNum1 + " and " + userNum2 + ".");
